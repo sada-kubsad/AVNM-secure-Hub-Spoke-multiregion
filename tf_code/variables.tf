@@ -1,13 +1,13 @@
 variable "primary-region" {
   type        = string
   description = "First region where resources will be deployed"
-  default = "swedencentral"
+  default = "westus"
 }
 
 variable "secondary-region" {
   type        = string
   description = "Secondary region where resources will be deployed"
-  default = "norwayeast"
+  default = "eastus"
 }
 
 
