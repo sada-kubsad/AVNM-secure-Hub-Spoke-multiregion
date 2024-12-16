@@ -1,7 +1,7 @@
 # Create hub networks and subnets in primary region
 
 resource "azurerm_virtual_network" "primary-region" {
-  name                = "primary-region-hub"
+  name                = "hub-primary-region"
   resource_group_name = azurerm_resource_group.region1.name
   location            = azurerm_resource_group.region1.location
   address_space       = ["10.1.0.0/22"]
