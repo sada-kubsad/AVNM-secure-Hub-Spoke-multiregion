@@ -1,7 +1,7 @@
 # Create hub networks and subnets in secondary region
 
 resource "azurerm_virtual_network" "secondary-region" {
-  name                = "secondary-region-vnet"
+  name                = "secondary-region-hub"
   resource_group_name = azurerm_resource_group.region2.name
   location            = azurerm_resource_group.region2.location
   address_space       = ["10.0.0.0/22"]
